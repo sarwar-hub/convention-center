@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site title -->
+    <title>Linda Convention</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <!-- Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom configaration of tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3F87F5',
+                        p: '#6C6C6C',
+                        primaryh: '#1C73F8',
+                        h2: '#231D4F',
+                    }
+                }
+            }
+        }
+    </script>
+    <!------------------------------------->
+</head>
+
+<body>
+    <!-- Header open -->
+    <header>
+        <!-- Navigation bar -->
+        <nav class="md:flex flex-row md:justify-between items-center bg-white px-5 md:px-20 py-7 shadow">
+            <!-- Right side Logo -->
+            <div class="logo flex justify-center md:mb-0 mb-5">
+                <span class="text-2xl font-semibold uppercase">
+                    LINDA CONVENTION
+                </span>
+            </div>
+            <!-- Left side Navigation items -->
+            <ul class="flex space-x-10 justify-center">
+                <li>
+                    <a class="text-md hover:text-primary hover:drop-shadow duration-100" href="#">About</a>
+                </li>
+                <li>
+                    <a class="text-md hover:text-primary hover:drop-shadow duration-100" href="#">Contact</a>
+                </li>
+                <li>
+                    <a class="text-md hover:text-primary hover:drop-shadow duration-100" href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Slider main container -->
+        <div class="swiper h-full w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide relative">
+                    <img class="w-full h-full object-center object-cover" src="images/banner1.jpg" alt="">
+                    <div class="absolute md:top-[40%] top-[5%] left-auto flex-row text-center w-full justify-center md:space-y-5 space-y-2">
+                        <h1 class="md:text-5xl text-xl text-white font-bold">The perfect venue for your <br> next event</h1>
+                        <p class="text-white text-xs md:text-lg md:w-1/2 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit</p>
+                        <button class="text-xl font-semibold text-white bg-primary border-transparent border-4 py-3 px-5 hover:text-primary hover:bg-transparent hover:border-primary duration-200">Book Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img class="w-full h-full object-center object-cover" src="images/banner1.jpg" alt="">
+                    <div class="absolute md:top-[40%] top-[5%] left-auto flex-row text-center w-full justify-center md:space-y-5 space-y-2">
+                        <h1 class="md:text-5xl text-xl text-white font-bold">The perfect venue for your <br> next event</h1>
+                        <p class="text-white text-xs md:text-lg md:w-1/2 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit</p>
+                        <button class="text-xl font-semibold text-white bg-primary border-transparent border-4 py-3 px-5 hover:text-primary hover:bg-transparent hover:border-primary duration-200">Book Now</button>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </header>
+    <!-- Header closed -->
+
+    <!-- Main open -->
+    <main class="px-5 md:px-[10%]">
+        <!-- Album section open -->
+        <section class="md:my-20 my-5 md:flex flex-row gap-10 items-center">
+            <div class="image md:w-1/2">
+                <img src="images/wedding.jpg" alt="">
+            </div>
+            <!-- Right side text -->
+            <div class="text md:w-1/2 flex-row space-y-5 md:text-start text-center">
+                <h1 class="text-5xl">Every moment is Precious</h1>
+                <p class="text-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="text-white font-bold bg-primary py-2 px-5 hover:bg-primaryh duration-100">Explore our Album <i class="fa-solid fa-arrow-right ml-3"></i></button>
+            </div>
+        </section>
+        <!-- Album section closed -->
+
+        <!-- Package section open -->
+        <section class="md:my-20 my-5">
+            <h1 class="text-5xl text-center">Choose Your Package</h1>
+            <p class="text-base text-p text-center my-10">We have several packages, you can choose any one or more.</p>
+            <!-- Grid main -->
+            <div class="packages grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
+                <!-- Package -->
+                <div class="package flex-row space-y-4 p-5 rounded-xl border-transparent border-2 shadow hover:-translate-y-5 hover:border-primary hover:shadow-xl duration-100">
+                    <h2 class="text-3xl text-h2">$300</h2>
+                    <h2 class="text-3xl text-h2">Business Fair</h2>
+                    <p class="text-base text-p">For most businesses event like book fair, craft fair.</p>
+                    <ul>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Limited space access</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Secuirty facility</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Event support</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Decoration design</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Per day bill</li>
+                    </ul>
+                    <button class="text-md font-semibold text-white py-1 px-10 bg-primary hover:bg-primaryh rounded-full shadow-lg">Go Next</button>
+                </div>
+                <div class="package flex-row space-y-4 p-5 rounded-xl border-transparent border-2 shadow hover:-translate-y-5 hover:border-primary hover:shadow-xl duration-100">
+                    <h2 class="text-3xl text-h2">$500</h2>
+                    <h2 class="text-3xl text-h2">Wedding Basic</h2>
+                    <p class="text-base text-p">For weddings with basic plan and limited item</p>
+                    <ul>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Full space access</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Food arrangement</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Mangement support</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Decoration design</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Billed as shift</li>
+                    </ul>
+                    <button class="text-md font-semibold text-white py-1 px-10 bg-primary hover:bg-primaryh rounded-full shadow-lg">Go Next</button>
+                </div>
+                <div class="package flex-row space-y-4 p-5 rounded-xl border-transparent border-2 shadow hover:-translate-y-5 hover:border-primary hover:shadow-xl duration-100">
+                    <h2 class="text-3xl text-h2">$800</h2>
+                    <h2 class="text-3xl text-h2">Wedding plus</h2>
+                    <p class="text-base text-p">For most weddings with premium plans</p>
+                    <ul>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Full space access</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Dedicated team</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Buffet food</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Premium Decoration</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Pay as plan</li>
+                    </ul>
+                    <button class="text-md font-semibold text-white py-1 px-10 bg-primary hover:bg-primaryh rounded-full shadow-lg">Go Next</button>
+                </div>
+                <div class="package flex-row space-y-4 p-5 rounded-xl border-transparent border-2 shadow hover:-translate-y-5 hover:border-primary hover:shadow-xl duration-100">
+                    <h2 class="text-3xl text-h2">$1200</h2>
+                    <h2 class="text-3xl text-h2">Corporate event</h2>
+                    <p class="text-base text-p">For most corporate business events</p>
+                    <ul>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Full space access</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Dedicated team</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Buffet food</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Premium Decoration</li>
+                        <li class="text-base text-p"><i class="fa-regular fa-circle-check mr-3 text-primary"></i>Pay as plan</li>
+                    </ul>
+                    <button class="text-md font-semibold text-white py-1 px-10 bg-primary hover:bg-primaryh rounded-full shadow-lg">Go Next</button>
+                </div>
+            </div>
+        </section>
+        <!-- Package section closed -->
+
+        <!-- Client section open -->
+        <section class="md:my-20 my-5">
+            <h1 class="text-5xl text-center">Happy Clients</h1>
+            <p class="text-base text-p text-center my-10">We have several packages, you can choose any one or more.</p>
+            <div class="clients grid md:grid-cols-3 grid-cols-1 gap-10">
+                <div class="client text-center space-y-5 shadow hover:shadow-xl p-5">
+                    <p class="text-base text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis natus consectetur dolor doloribus vero ipsa officiis quidem tenetur id.</p>
+                    <img class="mx-auto" src="images/person 1.png" alt="">
+                    <h3 class="text-md font-semibold">Regina Miles</h3>
+                    <p class="text-base text-p">Banker</p>
+                </div>
+                <div class="client text-center space-y-5 shadow hover:shadow-xl p-5">
+                    <p class="text-base text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis natus consectetur dolor doloribus vero ipsa officiis quidem tenetur id.</p>
+                    <img class="mx-auto" src="images/person 2.png" alt="">
+                    <h3 class="text-md font-semibold">Jone Drake</h3>
+                    <p class="text-base text-p">Banker</p>
+                </div>
+                <div class="client text-center space-y-5 shadow hover:shadow-xl p-5">
+                    <p class="text-base text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis natus consectetur dolor doloribus vero ipsa officiis quidem tenetur id.</p>
+                    <img class="mx-auto" src="images/person 3.png" alt="">
+                    <h3 class="text-md font-semibold">Cret Yater</h3>
+                    <p class="text-base text-p">Banker</p>
+                </div>
+            </div>
+        </section>
+        <!-- Client section closed -->
+
+    </main>
+    <!-- Main closed -->
+
+    <!-- Footer open -->
+    <footer class="px-5">
+
+    </footer>
+    <!-- Footer closed -->
+
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper slider control script -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // my config
+            autoplay:{
+                delay: 3000,
+            },
+            loop: true,
+            effect: 'fade',
+            
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets'
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+</body>
+
+</html>
